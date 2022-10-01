@@ -1,0 +1,32 @@
+<div class="container">
+    <form #addcourse="ngForm" (ngSubmit)="addcourse_f()">
+        <div class="form-group">
+            <label>CourseTitle</label>
+            <input type="text" class="form-control" name="title" [(ngModel)]="course.title">
+        </div>
+
+        <div class="form-group">
+            <label>CourseDescription</label>
+            <input type="text" class="form-control" name="description" [(ngModel)]="course.description">
+        </div>
+
+        <div class="form-group">
+            <label>CourseVenue</label>
+            <input type="text" class="form-control" name="venue" [(ngModel)]="course.venue">
+        </div>
+
+        <div class="form-group">
+            <label>CourseDuration</label>
+            <input type="text" class="form-control" name="duration" [(ngModel)]="course.duration">
+        </div>
+
+        <div class="form-group">
+            <label>CourseDate</label>
+            <input type="date" class="form-control" name="date"[(ngModel)]="course.date">
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+
+    </form>
+</div>
